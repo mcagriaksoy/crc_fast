@@ -9,7 +9,7 @@
  * The functions are implemented using lookup tables.
  */
 
-#include "crc.hpp"
+#include "../include/crc.hpp"
 #include <string>
 
 void crc_8_calculation(std::string &input, uint8_t &output, crc8_calc::crc8_t crc_type)

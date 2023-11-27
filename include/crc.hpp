@@ -89,4 +89,34 @@ void crc_16_calculation(std::string &input, uint16_t &output, crc16_calc::crc16_
  */
 void crc_32_calculation(std::string &input, uint32_t &output, crc32_calc::crc32_t crc_type);
 
+/**
+ * @brief Calculates the CRC-8 checksum of the given input string using the specified CRC-8 type in a
+ *        multithreaded manner.
+ *
+ * @param input The input string to calculate the checksum for.
+ * @param output The output variable to store the calculated checksum.
+ * @param crc_type The type of CRC-8 to use for the calculation.
+ */
+void multithread_crc_8_calculation(std::string &input, uint8_t &output, crc8_calc::crc8_t crc_type);
+
+/**
+ * @brief Calculates the CRC-16 checksum of the given input string using the specified CRC type in a
+ *        multithreaded manner.
+ *
+ * @param input The input string to calculate the checksum for.
+ * @param output The output variable to store the calculated checksum.
+ * @param crc_type The type of CRC-16 algorithm to use for the calculation.
+ */
+void multithread_crc_16_calculation(std::string &input, uint16_t &output, crc16_calc::crc16_t crc_type);
+
+/**
+ * @brief Calculates the CRC-32 checksum of the given input string using the specified CRC type in a
+ *        multithreaded manner.
+ *
+ * @param input The input string to calculate the checksum for.
+ * @param output The output variable to store the calculated checksum.
+ * @param crc_type The type of CRC algorithm to use for the calculation.
+ */
+void multithread_crc_32_calculation(std::string &input, uint32_t &output, crc32_calc::crc32_t crc_type);
+
 #endif // CRC_HPP
